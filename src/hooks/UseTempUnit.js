@@ -6,11 +6,11 @@ export const useTempUnit = () => {
     const [unitMode,setUnitMode] = useState(false); // false = C, true = F
 
     //toggle unit mode
-    const unitModeHandler = () => {
+    const toggleUnitMode = () => {
         setUnitMode(!unitMode);
         localStorage.setItem('unitMode',!unitMode); // save unit mode to local storage
     }
-
+    
     useEffect(() => {
         //check if unit mode is saved in local storage
         //if not, save unit mode to local storage
@@ -20,6 +20,6 @@ export const useTempUnit = () => {
     } else{       
         setUnitMode(unitMode);
     } },[]);
-    return [unitMode,unitModeHandler];
+    return [unitMode,toggleUnitMode];
 
 }
