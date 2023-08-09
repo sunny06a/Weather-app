@@ -5,7 +5,7 @@ export const useImageFetch = () => {
     //declare state variable for image
     const [images,setImages] = useState('');
     const fetchImage = async endpoint => {
-        try{
+        try{ 
             //fetch image from unsplash api
             const result = await (await fetch(endpoint)).json();
             setImages(result.results[Math.floor(Math.random() * 10)].urls.regular);
