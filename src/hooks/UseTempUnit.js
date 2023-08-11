@@ -1,25 +1,20 @@
-import { useEffect, useState } from "react";
-
+import { useState, useEffect } from 'react';
 
 export const useTempUnit = () => {
+    const [unitMode, setUnitMode] = useState(false);
 
-    const [unitMode,setUnitMode] = useState(false); // false = C, true = F
-
-    //toggle unit mode
-    const toggleUnitMode = () => {
+    const unitModeChanged = () => {
         setUnitMode(!unitMode);
-        localStorage.setItem('unitMode',!unitMode); // save unit mode to local storage
+        localStorage.setItem('unit', !unitMode);
     }
-    
+
     useEffect(() => {
-        //check if unit mode is saved in local storage
-        //if not, save unit mode to local storage
-        //else, set unit mode to the value in local storage
-        if(JSON.parse(localStorage.getItem('unitMode')) === null){
-            localStorage.setItem('unitMode',unitMode);
-    } else{       
-        setUnitMode(unitMode);
-    } },[]);
-    return [unitMode,toggleUnitMode];
+        if (JSON.parse(localStorage.getItem('unit'))) {
+            setUnitMode(!unitMode);
+        } else {
+            localStorage.setItem('unit', unitMode);
+        }
+    }, []);
+    return [unitMode, unitModeChanged];
 
 }

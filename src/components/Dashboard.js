@@ -11,10 +11,10 @@ import Spinner from './elements/Spinner';
 import SpinnerContainer from './elements/SpinnerContainer';
 import { StyledGlobal, StyledDashboard } from '../styles';
 import { themeLight, themeDark } from '../constants';
-import { useImageFetch } from '../hooks/useImageFetch';
-import { useCoordinations } from '../hooks/useCoordinations';
-import {useWeatherFetch} from '../hooks/useWeatherFetch';
-import { useNightMode } from '../hooks/useNightMode';
+import { useImageFetch } from '../hooks/UseImageFetch';
+import { useCoordinations } from '../hooks/UseCoordinations';
+import {useWeatherFetch} from '../hooks/UseWeatherFetch';
+import { useNightMode } from '../hooks/UseNightMode';
 import { SEARCH_BY_WORD } from '../api';
 import { useTempUnit } from '../hooks/UseTempUnit';
 

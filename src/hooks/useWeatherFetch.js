@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
 import { SEARCH_BY_LOCATION, DEFAULT_URL, API_URL_APPID, API_APPID, GET_NEXT_DAYS_HOURS, DEF_N_D_H } from '../api';
 
+
 export const useWeatherFetch = (searchCity, lat = '', long = '') => {
     const [weather, setWeather] = useState('');
     const [error, setError] = useState(false);
     const [loading, setLoading] = useState(false);
- 
+
     const fetchWeather = async endpoint => {
         try {
             const result = await (await fetch(endpoint)).json();

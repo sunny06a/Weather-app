@@ -9,7 +9,7 @@ import StyledDashboard from './StyledDashboard';
 import StyledSpinner from './StyledSpinner';
 import StyledSpinnerContainer from './StyledSpinnerContainer';
 
-export {
+export { 
     StyledGlobal,
     StyledHeader,
     StyledContainer,
