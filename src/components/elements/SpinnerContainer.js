@@ -1,10 +1,10 @@
 import React from "react";
-import {styledSpinnerContainer} from '../../styles'
+import { StyledSpinnerContainer } from "../../styles";
 
 const SpinnerContainer = () => {
-    <styledSpinnerContainer>
+    <StyledSpinnerContainer>
         <div className="Loading.."></div>
         <span>Loading...</span>
-    </styledSpinnerContainer>
+    </StyledSpinnerContainer>
 };
 export default SpinnerContainer;

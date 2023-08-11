@@ -1,6 +1,6 @@
 //*** OPEN WEATHER & UNSPLASH KEYS****//
-const API_APPID = process.env.REACT_APP_API_KEY_APPID;
-const API_UNPSLASH = process.env.REACT_APP_API_KEY_UNSPLASH;
+const API_APPID = "db9a8257712499a3b58295546b4ccb03";
+const API_UNPSLASH ="oiA3Bq8anL8eo_qOGqaUdINnHZchZxjAAhg6-Zy5m9I";
 
 const API_URL_APPID = "https://api.openweathermap.org/data/2.5/weather";
 const DEFAULT_URL = `${API_URL_APPID}/?APPID=${API_APPID}&lat=41.390205&lon=2.154007`;

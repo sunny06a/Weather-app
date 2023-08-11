@@ -49,9 +49,10 @@ const Dashboard = () => {
     
     useEffect(()=>{
         //default fetching..
+        //eslint-disable-next-line
         getWeatherLocation(lat,long);
         fetchImage(`${SEARCH_BY_WORD}${weather.city}`);
-    },[lat,long])
+    },[lat,long]);
 
     if (!weather) return <ThemeProvider theme={nightMode ? themeDark : themeLight} ><Spinner /><StyledGlobal /></ThemeProvider>
     

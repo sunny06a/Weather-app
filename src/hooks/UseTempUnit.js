@@ -5,6 +5,7 @@ export const useTempUnit = () => {
 
     const unitModeChanged = () => {
         setUnitMode(!unitMode);
+
         localStorage.setItem('unit', !unitMode);
     }
 
