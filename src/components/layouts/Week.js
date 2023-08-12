@@ -6,7 +6,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/swiper.scss';
 
-
 const Week = ({ data,tempUnit }) => (
     <StyledWeek>
         <Swiper

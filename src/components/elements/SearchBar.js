@@ -27,6 +27,5 @@ const SearchBar = ({ findCoordinates, searchCallback, error }) => {
             </div>
             {error && (<div className="error">Please type correct!</div>)}
         </div>);
-
 };
 export default SearchBar;
